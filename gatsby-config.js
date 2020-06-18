@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Portfolio-Rekib Ahmed',
-    author: 'Rekib Ahmed'
+    author: 'Rekib Ahmed',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

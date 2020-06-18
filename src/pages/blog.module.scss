@@ -1,31 +1,10 @@
 .posts {
     list-style-type: none;
     margin: 0;
-}
-
-.post {
-    margin: 1rem 0;
-
     a {
-        background: #f4f4f4;
         color: #000000;
         display: block;
         padding: 1rem;
         text-decoration: none;
-    }
-
-    a:hover {
-        background: #efefef;
-    }
-
-    h2 {
-        margin-bottom: 0;
-    }
-
-    p {
-        margin-top: .5rem;
-        color: #777777;
-        font-size: .8rem;
-        font-style: italic;
     }
 }

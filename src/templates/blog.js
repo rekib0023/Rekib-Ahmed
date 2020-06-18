@@ -8,6 +8,12 @@ import Head from '../components/head'
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: {eq: $slug}) {
+      backgroundImage {
+        file {
+          url
+        }
+        title
+      }
       title
       publishedDate(formatString: "MMMM Do, YYYY")
       body {
@@ -31,6 +37,7 @@ export default function Blog(props) {
 
   return (
   <Layout>
+    <img alt={props.data.contentfulBlogPost.backgroundImage.title} src={props.data.contentfulBlogPost.backgroundImage.file.url}/>
     <Head title={props.data.contentfulBlogPost.title} />
     <h1>{props.data.contentfulBlogPost.title}</h1>
     <p>{props.data.contentfulBlogPost.publishedDate}</p>
