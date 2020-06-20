@@ -1,0 +1,15 @@
+.main {
+  // background-color: orange;
+  height: 30rem;
+  .content {
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -30%);
+  }
+}
+
+.col {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}

@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.body {
+  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
-    flex-grow: 1;
+  flex-grow: 1;
 }

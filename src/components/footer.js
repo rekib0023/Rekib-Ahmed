@@ -17,8 +17,8 @@ export default function Footer() {
   `)
 
   return (
-    <footer className={`text-center ${footerStyles.footer}`}>
-      <p>Created by {data.site.siteMetadata.author}, Copyright 2020</p>
+    <footer className={`${footerStyles.footer}`}>
+      <p><span>&#169;</span> 2020 {data.site.siteMetadata.author}. All rights reserved.</p>
     </footer>
   )
 }

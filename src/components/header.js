@@ -16,12 +16,10 @@ export default function Header() {
   `)
 
   return (
-    <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
+    <header className={`${headerStyles.header} container`}>
+      <Link className={headerStyles.title} to="/">
+        {data.site.siteMetadata.title}
+      </Link>
       <nav>
         <ul className={headerStyles.navList}>
           <li>
@@ -62,6 +60,10 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div>
+        <button>My Work</button>
+        <button>Resume</button>
+      </div>
     </header>
   )
 }

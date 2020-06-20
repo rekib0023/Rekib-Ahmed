@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Portfolio-Rekib Ahmed',
+    title: 'Portfolio .',
     author: 'Rekib Ahmed',
   },
   plugins: [
