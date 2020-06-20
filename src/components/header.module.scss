@@ -1,75 +1,61 @@
 .header {
-    padding: 1rem 0 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
-    li,
-    a {
-      text-decoration: none;
-    }
+  padding: 1rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  li,
+  a {
+    text-decoration: none;
+  }
 }
 
-.title, .title:hover {
-    color: #000000;
-    font-size: 2rem;
-    font-weight: 600;
-    text-decoration: none;
+.title,
+.title:hover {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
 }
 
-.nav-item {
-    color: #999999;
-    font-size: .9rem;
-    margin-right: 1.3rem;
-    text-decoration: none;
-    display: inline-block;
+.nav-items {
+  margin-bottom: 0px;
 }
 
-.nav-item:hover {
-    color: #0088a9;
+.nav-links {
+  color: #999999;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.active-nav-item {
-    color: #333333;
+.nav-links:hover {
+  color: #0088a9;
 }
 
-// .header {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding: 10px 10%;
-  // li,
-  // a {
-  //   text-decoration: none;
-  // }
-// }
+.active-nav-links {
+  color: #333333;
+}
 
-// .logo {
-//   cursor: pointer;
-//   display: inline-block;
-// }
+.btn-blog {
+  color: rgba(108, 88, 179, 0.75);
+  letter-spacing: 1px;
+  border: 3px solid rgba(108, 89, 179, 0.75);
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  padding: 5px 20px;
+}
 
-// .nav_links {
-//   list-style: none;
-//   ul {
-//     top: 50%;
-//     -ms-transform: translateY(-50%);
-//     transform: translateY(-50%);
-//   }
-//   li {
-//     display: inline-block;
-//     padding: 0px 20px;
-//   }
-//   a {
-//     transition: all 0.3s ease 0s;
-//   }
-//   a:hover {
-//     color: #0088a9;
-//   }
-// }
+.btn-blog:hover {
+  color: #fff;
+  background: rgba(108, 88, 179, 0.75);
+  border: 2px solid rgba(108, 89, 179, 0.75);
+}

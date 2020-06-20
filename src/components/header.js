@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
+import { Button } from "react-bootstrap"
+
 import headerStyles from "./header.module.scss"
 
 export default function Header() {
@@ -22,38 +24,38 @@ export default function Header() {
       </Link>
       <nav>
         <ul className={headerStyles.navList}>
-          <li>
+          <li className={headerStyles.navItems}>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              className={headerStyles.navLinks}
+              activeClassName={headerStyles.activeNavLinks}
               to="/"
             >
               Home
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.navItems}>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/blog"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/about"
+              className={headerStyles.navLinks}
+              activeClassName={headerStyles.activeNavLinks}
+              to="#about"
             >
               About
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.navItems}>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/contact"
+              className={headerStyles.navLinks}
+              activeClassName={headerStyles.activeNavLinks}
+              to="#resume"
+            >
+              Resume
+            </Link>
+          </li>
+          <li className={headerStyles.navItems}>
+            <Link
+              className={headerStyles.navLinks}
+              activeClassName={headerStyles.activeNavLinks}
+              to="#contact"
             >
               Contact
             </Link>
@@ -61,8 +63,11 @@ export default function Header() {
         </ul>
       </nav>
       <div>
-        <button>My Work</button>
-        <button>Resume</button>
+        <a href="/blog" target="_blank">
+          <button type="button" className={headerStyles.btnBlog}>
+            Blog
+          </button>
+        </a>
       </div>
     </header>
   )

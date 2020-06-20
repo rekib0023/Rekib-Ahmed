@@ -1,10 +1,13 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import { graphql, useStaticQuery } from "gatsby"
 import { Col, Row } from "react-bootstrap"
 
-import Layout from "../components/layout"
 import Head from "../components/head"
 import CardBlog from "../components/cards"
+import Footer from "../components/footer"
+
+import blogStyles from "./blog.module.scss"
 
 export default function Blog() {
   const data = useStaticQuery(graphql`
@@ -29,10 +32,10 @@ export default function Blog() {
   `)
 
   return (
-    <Layout>
-      <Head title="Blog" />
+    <div>
+      <Helmet title="Blog | A Voyage to Data Science" />
       <div className="container">
-        <h1>Blog!</h1>
+        <h2 className={`${blogStyles.title}`}>A Voyage to Data Science !</h2>
         <Row>
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
@@ -45,6 +48,7 @@ export default function Blog() {
           })}
         </Row>
       </div>
-    </Layout>
+      <Footer></Footer>
+    </div>
   )
 }

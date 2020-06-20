@@ -37,11 +37,11 @@ export default function Blog(props) {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
-      <img
-        alt={props.data.contentfulBlogPost.backgroundImage.title}
-        src={props.data.contentfulBlogPost.backgroundImage.file.url}
-      />
       <div className="container">
+        <img
+          alt={props.data.contentfulBlogPost.backgroundImage.title}
+          src={props.data.contentfulBlogPost.backgroundImage.file.url}
+        />
         <h1>{props.data.contentfulBlogPost.title}</h1>
         <p>{props.data.contentfulBlogPost.publishedDate}</p>
         {documentToReactComponents(
