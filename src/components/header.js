@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-
-import { Button } from "react-bootstrap"
+import { Nav, Navbar, NavDropdown } from "react-bootstrap"
 
 import headerStyles from "./header.module.scss"
 
@@ -19,56 +18,22 @@ export default function Header() {
 
   return (
     <header className={`${headerStyles.header} container`}>
-      <Link className={headerStyles.title} to="/">
-        {data.site.siteMetadata.title}
-      </Link>
-      <nav>
-        <ul className={headerStyles.navList}>
-          <li className={headerStyles.navItems}>
-            <Link
-              className={headerStyles.navLinks}
-              activeClassName={headerStyles.activeNavLinks}
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li className={headerStyles.navItems}>
-            <Link
-              className={headerStyles.navLinks}
-              activeClassName={headerStyles.activeNavLinks}
-              to="#about"
-            >
-              About
-            </Link>
-          </li>
-          <li className={headerStyles.navItems}>
-            <Link
-              className={headerStyles.navLinks}
-              activeClassName={headerStyles.activeNavLinks}
-              to="#resume"
-            >
-              Resume
-            </Link>
-          </li>
-          <li className={headerStyles.navItems}>
-            <Link
-              className={headerStyles.navLinks}
-              activeClassName={headerStyles.activeNavLinks}
-              to="#contact"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <a href="/blog" target="_blank">
-          <button type="button" className={headerStyles.btnBlog}>
-            Blog
-          </button>
-        </a>
-      </div>
+      <Navbar expand="lg">
+        <Navbar.Brand href="#home" className={`${headerStyles.logo}`}>
+          <h2>Portfolio .</h2>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <div className="mr-auto"></div>
+          <Nav className={`${headerStyles.navLists}`}>
+            <Nav.Link href="/" className={`${headerStyles.navLinks} active`}>Home</Nav.Link>
+            <Nav.Link href="#about" className={`${headerStyles.navLinks}`}>About</Nav.Link>
+            <Nav.Link href="#" className={`${headerStyles.navLinks}`}>Work</Nav.Link>
+            <Nav.Link href="/blog" className={`${headerStyles.navLinks}`}>Blog</Nav.Link>
+            <Nav.Link href="#contact" className={`${headerStyles.navLinks}`}>Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </header>
   )
 }

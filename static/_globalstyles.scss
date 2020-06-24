@@ -1,0 +1,84 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Yeseva+One&display=swap");
+/* SCSS RGB */
+$imperial-red: #D70652;
+$honeydew: rgba(241, 250, 238, 1);
+$prussian-blue: rgba(29, 53, 87, 1);
+
+/* Gradient */
+$gradient: linear-gradient(45deg, #D70652, #FF025E);
+
+
+/* ================= Buttons ==================*/
+.button {
+  padding: 0.6rem 2rem;
+  font: normal 500 16px/20px;
+  position: relative;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.primary-button {
+  // font-weight: bold;
+  background: $gradient;
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.3s ease;
+  -webkit-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+}
+.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+  font-weight: 700;
+}
+.primary-button:after,
+.secondary-button:after {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  background: $gradient;
+  content: "";
+  z-index: -1;
+  border-radius: 6px;
+}
+.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  transition: background 0.3s ease;
+}
+.secondary-button:hover {
+  background: $gradient;
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  font-weight: 700;
+}
+
+
+/* =================== Headings =====================*/
+.sub-heading{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+.heading{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: .4rem;
+}
+.para{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 1.4rem;
+}

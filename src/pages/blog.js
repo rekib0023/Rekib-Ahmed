@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import { graphql, useStaticQuery } from "gatsby"
 import { Col, Row } from "react-bootstrap"
 
-import Head from "../components/head"
 import CardBlog from "../components/cards"
 import Footer from "../components/footer"
 
