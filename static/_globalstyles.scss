@@ -60,25 +60,36 @@ $gradient: linear-gradient(45deg, #D70652, #FF025E);
   box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
   font-weight: 700;
 }
-
+.btn-icons {
+  padding: 0 0.5rem 0 0;
+}
 
 /* =================== Headings =====================*/
 .sub-heading{
   font-family: 'Roboto', sans-serif;
+  color: $prussian-blue;
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: .1rem;
 }
 .heading{
   font-family: 'Roboto', sans-serif;
+  color: $prussian-blue;
   font-weight: 900;
   font-size: 3rem;
   letter-spacing: .4rem;
 }
 .para{
   font-family: 'Roboto', sans-serif;
+  color: $prussian-blue;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: .1rem;
   line-height: 1.4rem;
+}
+.section-heading{
+  font-family: 'Roboto', sans-serif;
+  color: $prussian-blue;
+  display: flex;
+  justify-content: center;
 }

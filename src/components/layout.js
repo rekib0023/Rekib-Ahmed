@@ -1,4 +1,5 @@
 import React from "react"
+import "../../static/FontawesomeIcons"
 
 import Footer from "./footer"
 import Header from "./header"

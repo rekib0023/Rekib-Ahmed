@@ -1,18 +1,20 @@
-@import '../../static/globalstyles';
+@import "../../static/globalstyles";
+
+/*=========== Start Landing Area ============*/
 
 .site-banner-content {
   padding: 16px;
   .site-title {
     padding-top: 12%;
-    h3{
+    h3 {
       margin: 0;
-      padding-bottom: .1rem;
+      padding-bottom: 0.1rem;
     }
-    h1{
+    h1 {
       padding: 0;
       margin: 0;
     }
-    h4{
+    h4 {
       // margin: 0;
       padding-top: 25px;
       margin-bottom: 3rem;
@@ -20,15 +22,33 @@
   }
   img {
     color: $prussian-blue;
-    padding: 7rem 0 0 2rem;
+    padding: 7rem 0;
     width: 90rem;
     margin: 0;
   }
 }
 
-// .title-text {
-//   font: normal bold 2rem/2rem;
-// }
+/*=========== End Landing Area ============*/
 
-.site-buttons {
+/*=========== Start About Area =============*/
+.about-section {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  // background-color: yellowgreen;
+  .about-section-content {
+    padding: 0 32px;
+    font-family: "Roboto", sans-serif;
+    color: $prussian-blue;
+    .about-para {
+      // display: flex;
+      // justify-content: center;
+    }
+    .about-skills {
+      .skill-grid {
+        // margin: 16px;
+        // background-color: red;
+      }
+    }
+  }
 }
+/*=========== End About Area =============*/

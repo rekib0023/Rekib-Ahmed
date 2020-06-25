@@ -8,11 +8,12 @@ export default function Head({ title }) {
             site {
                 siteMetadata {
                     title
+                    author
                 }
             }
         }
     `)
     return (
-        <Helmet title={`${title} | ${data.site.siteMetadata.title}`}/>
+        <Helmet title={`${data.site.siteMetadata.author} | ${data.site.siteMetadata.title}`}/>
     )
 }
