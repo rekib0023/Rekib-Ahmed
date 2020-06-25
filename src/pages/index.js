@@ -30,13 +30,14 @@ export default function Home() {
                     type="button"
                     className={`btn button primary-button mr-4 text-uppercase`}
                   >
-                    <span className={`btn-icons`}><FontAwesomeIcon icon="user" pull="left"/></span>
+                    <span className={`${indexStyles.btnIcons}`}><FontAwesomeIcon icon="briefcase" size="md"/></span>
                     my work
                   </button>
                   <button
                     type="button"
                     className={`btn button secondary-button  text-uppercase`}
                   >
+                    <span className={`${indexStyles.btnIcons}`}><FontAwesomeIcon icon="download" size="md"/></span>
                     resume
                   </button>
                 </div>
