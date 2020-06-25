@@ -15,7 +15,6 @@
       margin: 0;
     }
     h4 {
-      // margin: 0;
       padding-top: 25px;
       margin-bottom: 3rem;
     }
@@ -26,7 +25,7 @@
     width: 90rem;
     margin: 0;
   }
-  .site-buttons{
+  .site-buttons {
     .btn-icons {
       padding: 0 0.8rem 0 0;
     }
@@ -39,19 +38,46 @@
 .about-section {
   margin-top: 1rem;
   padding: 2rem 0;
-  // background-color: yellowgreen;
   .about-section-content {
     padding: 0 32px;
-    font-family: "Roboto", sans-serif;
     color: $prussian-blue;
     .about-para {
-      // display: flex;
-      // justify-content: center;
+      padding-top: 1.5rem;
     }
     .about-skills {
+      padding-top: 2rem;
       .skill-grid {
-        // margin: 16px;
-        // background-color: red;
+        a {
+          .circle-icon {
+            background: $gradient;
+            color: whitesmoke;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 30px;
+            -webkit-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
+            -moz-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
+            box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
+          }
+          .circle-icon:hover {
+            background: transparent;
+            color: $prussian-blue;
+            border: 3px solid $prussian-blue;
+            -webkit-box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
+            box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
+          }
+        }
+        .icon-text {
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          line-height: 40px;
+          font-weight: 500;
+          color: $prussian-blue;
+          padding-left: 8px;
+        }
       }
     }
   }

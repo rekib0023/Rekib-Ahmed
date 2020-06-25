@@ -1,13 +1,13 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Yeseva+One&display=swap");
 /* SCSS RGB */
-$imperial-red: #D70652;
+$imperial-red: #d70652;
+$imperial-red2: #ff025e;
 $honeydew: rgba(241, 250, 238, 1);
 $prussian-blue: rgba(29, 53, 87, 1);
 
 /* Gradient */
-$gradient: linear-gradient(45deg, #D70652, #FF025E);
-
+$gradient: linear-gradient(45deg, #d70652, #ff025e);
 
 /* ================= Buttons ==================*/
 .button {
@@ -15,7 +15,7 @@ $gradient: linear-gradient(45deg, #D70652, #FF025E);
   font: normal 500 16px/20px;
   position: relative;
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .primary-button {
@@ -24,14 +24,14 @@ $gradient: linear-gradient(45deg, #D70652, #FF025E);
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.3s ease;
-  -webkit-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
-  box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
 }
 .primary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: black;
+  color: $prussian-blue;
   font-weight: 700;
 }
 .primary-button:after,
@@ -48,6 +48,7 @@ $gradient: linear-gradient(45deg, #D70652, #FF025E);
 }
 .secondary-button {
   background: white;
+  color: $prussian-blue;
   background-clip: padding-box;
   transition: background 0.3s ease;
 }
@@ -55,37 +56,42 @@ $gradient: linear-gradient(45deg, #D70652, #FF025E);
   background: $gradient;
   background-clip: padding-box;
   color: whitesmoke;
-  -webkit-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
-  box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.4);
   font-weight: 700;
 }
 
+.stroke-transparent {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+}
+
 /* =================== Headings =====================*/
-.sub-heading{
-  font-family: 'Roboto', sans-serif;
+.sub-heading {
+  font-family: "Roboto", sans-serif;
   color: $prussian-blue;
   font-weight: 400;
   font-size: 1.2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
-.heading{
-  font-family: 'Roboto', sans-serif;
+.heading {
+  font-family: "Roboto", sans-serif;
   color: $prussian-blue;
   font-weight: 900;
   font-size: 3rem;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
 }
-.para{
-  font-family: 'Roboto', sans-serif;
+.para {
+  font-family: "Roboto", sans-serif;
   color: $prussian-blue;
   font-weight: 400;
   font-size: 1rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 1.4rem;
 }
-.section-heading{
-  font-family: 'Roboto', sans-serif;
+.section-heading {
+  font-family: "Roboto", sans-serif;
   color: $prussian-blue;
   display: flex;
   justify-content: center;

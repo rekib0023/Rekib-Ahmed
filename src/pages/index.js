@@ -5,10 +5,11 @@ import Head from "../components/head"
 
 import { Row, Col, CardColumns, Card } from "react-bootstrap"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "../../static/_globalstyles.scss"
 import indexStyles from "./index.module.scss"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -30,14 +31,18 @@ export default function Home() {
                     type="button"
                     className={`btn button primary-button mr-4 text-uppercase`}
                   >
-                    <span className={`${indexStyles.btnIcons}`}><FontAwesomeIcon icon="briefcase" size="md"/></span>
+                    <span className={`${indexStyles.btnIcons}`}>
+                      <FontAwesomeIcon icon="briefcase" size="md" />
+                    </span>
                     my work
                   </button>
                   <button
                     type="button"
                     className={`btn button secondary-button  text-uppercase`}
                   >
-                    <span className={`${indexStyles.btnIcons}`}><FontAwesomeIcon icon="download" size="md"/></span>
+                    <span className={`${indexStyles.btnIcons}`}>
+                      <FontAwesomeIcon icon="download" size="md" />
+                    </span>
                     resume
                   </button>
                 </div>
@@ -90,48 +95,47 @@ export default function Home() {
             <strong>&nbsp;skills</strong> that I possessd. Please have a look.
           </p>
           <div className={`${indexStyles.aboutSkills}`}>
-            {/* <Row>
-              <Col lg={4} md={12} className={`${indexStyles.skillGrid}`}>
-
+            <Row>
+              <Col
+                lg={4}
+                md={12}
+                className={`${indexStyles.skillGrid} text-center`}
+              >
+                <Link>
+                  <FontAwesomeIcon
+                    icon="palette"
+                    className={`${indexStyles.circleIcon}`}
+                  />
+                </Link>
+                <div className={`${indexStyles.iconText} text-center`}>Design</div>
               </Col>
-              <Col lg={4} md={12} className={`${indexStyles.skillGrid}`}>a</Col>
-              <Col lg={4} md={12} className={`${indexStyles.skillGrid}`}>a</Col>
-            </Row> */}
-            <CardColumns>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title className={`text-center`}>Design</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title className={`text-center`}>Build</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title className={`text-center`}>Develop</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </CardColumns>
+              <Col
+                lg={4}
+                md={12}
+                className={`${indexStyles.skillGrid} text-center`}
+              >
+                <Link>
+                  <FontAwesomeIcon
+                    icon="code"
+                    className={`${indexStyles.circleIcon} stroke-transparent`}
+                  />
+                </Link>
+                <div className={`${indexStyles.iconText} text-center`}>Build</div>
+              </Col>
+              <Col
+                lg={4}
+                md={12}
+                className={`${indexStyles.skillGrid} text-center`}
+              >
+                <Link>
+                  <FontAwesomeIcon
+                    icon="truck-loading"
+                    className={`${indexStyles.circleIcon}`}
+                  />
+                </Link>
+                <div className={`${indexStyles.iconText} text-center`}>Deliver</div>
+              </Col>
+            </Row>
           </div>
         </div>
       </section>
