@@ -47,7 +47,7 @@ export default function Blog() {
           })}
         </Row>
       </div>
-      <Footer></Footer>
+      <Footer/>
     </div>
   )
 }

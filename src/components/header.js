@@ -28,6 +28,7 @@ export default function Header() {
           <Nav className={`${headerStyles.navLists}`}>
             <Nav.Link href="#home" className={`${headerStyles.navLinks} active`}>Home</Nav.Link>
             <Nav.Link href="#about" className={`${headerStyles.navLinks}`}>About</Nav.Link>
+            <Nav.Link href="#skills" className={`${headerStyles.navLinks}`}>Skills</Nav.Link>
             <Nav.Link href="#work" className={`${headerStyles.navLinks}`}>Work</Nav.Link>
             <Nav.Link href="#blog" className={`${headerStyles.navLinks}`}>Blog</Nav.Link>
             <Nav.Link href="#contact" className={`${headerStyles.navLinks}`}>Contact</Nav.Link>

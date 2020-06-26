@@ -20,16 +20,13 @@
     }
   }
   img {
-    color: $prussian-blue;
     padding: 7rem 0;
     width: 90rem;
     margin: 0;
   }
-  .site-buttons {
-    .btn-icons {
-      padding: 0 0.8rem 0 0;
-    }
-  }
+}
+.btn-icons {
+  padding: 0 0.8rem 0 0;
 }
 
 /*=========== End Landing Area ============*/
@@ -38,48 +35,72 @@
 .about-section {
   margin-top: 1rem;
   padding: 2rem 0;
-  .about-section-content {
+  .about-para {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+}
+/*=========== End About Area =============*/
+
+/*=========== Start Skill Area =============*/
+.skill-section {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  .skill-section-content {
     padding: 0 32px;
-    color: $prussian-blue;
-    .about-para {
-      padding-top: 1.5rem;
+    h1 {
+      display: flex;
+      justify-content: center;
     }
-    .about-skills {
-      padding-top: 2rem;
-      .skill-grid {
-        a {
-          .circle-icon {
-            background: $gradient;
-            color: whitesmoke;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            text-align: center;
-            vertical-align: middle;
-            padding: 30px;
-            -webkit-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
-            -moz-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
-            box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.33);
-          }
-          .circle-icon:hover {
-            background: transparent;
-            color: $prussian-blue;
-            border: 3px solid $prussian-blue;
-            -webkit-box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
-            -moz-box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
-            box-shadow: 10px 10px 0px -200px rgba(0, 0, 0, 0);
-          }
+    .skill-cards {
+      padding: 2rem 0;
+      .card {
+        padding: 2rem;
+        margin-top: 30px;
+        box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.1);
+        border: none;
+        border-radius: 5%;
+        height: max-content;
+        img {
+          width: 5rem;
+          height: 5rem;
         }
-        .icon-text {
-          font-size: 1.2rem;
-          letter-spacing: 0.2rem;
-          line-height: 40px;
-          font-weight: 500;
-          color: $prussian-blue;
-          padding-left: 8px;
+        h2 {
+          padding: 0;
+          padding-bottom: 10px;
+          margin: 0;
+        }
+      }
+      .card-body {
+        padding: 0;
+        .skill-icons {
+          div {
+            img {
+              margin: 0.6rem 0.6rem !important;
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            img:hover {
+              // background-color: salmon;
+              transform: scale(1.4);
+              
+              margin: .65rem .65rem !important;
+            }
+          }
         }
       }
     }
   }
 }
-/*=========== End About Area =============*/
+
+#design {
+  .card-body .skill-icons {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  background-color: saddlebrown;
+}
+/*=========== End Skill Area =============*/
