@@ -96,7 +96,8 @@ export default function Home() {
               <br />
               Now here I am seeking<strong>&nbsp;jobs</strong> in the
               <strong>&nbsp;Data Science</strong> domain.
-            </p><br/>
+            </p>
+            <br />
             <button
               type="button"
               className={`btn button primary-button  text-uppercase`}
@@ -145,13 +146,15 @@ export default function Home() {
                       className={`card-text text-secondary ${indexStyles.skillIcons}`}
                     >
                       <div>
-                        <img src="https://img.icons8.com/color/96/000000/power-bi.png" />
+                        <img src="https://img.icons8.com/fluent/96/000000/microsoft-excel-2019.png" />
+                        <img src="https://img.icons8.com/color/96/000000/microsoft-powerpoint-2019.png" />
+                        <img src="../../bootstrap-seeklogo.com.svg" />
                         <img src="https://img.icons8.com/color/96/000000/adobe-illustrator.png" />
                         <img src="https://img.icons8.com/color/96/000000/adobe-xd.png" />
-                        <img src="https://img.icons8.com/fluent/96/000000/microsoft-excel-2019.png" />
-                        <img src="https://img.icons8.com/fluent/96/000000/adobe-photoshop.png" />
-                        <img src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-official.svg" />
+                        <img src="https://img.icons8.com/fluent/96/000000/adobe-photoshop.png" /> 
+                        <img src="https://img.icons8.com/color/96/000000/power-bi.png" />
                         <img src="https://img.icons8.com/color/96/000000/tableau-software.png" />
+                        <img src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-official.svg" />
                       </div>
                     </div>
                   </div>
@@ -181,10 +184,10 @@ export default function Home() {
                         <img src="https://img.icons8.com/color/96/000000/python.png" />
                         <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" />
                         <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" />
+                        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
+                        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" />
                         <img src="https://img.icons8.com/fluent/96/000000/github.png" />
-                        <img src="https://img.icons8.com/color/96/000000/pycharm.png" />
                         <img src="../../scikit-learn-seeklogo.com.svg" />
-                        <img src="../../jupyter-seeklogo.com.svg" />
                         <img src="../../tensorflow-seeklogo.com.svg" />
                       </div>
                     </div>
@@ -213,14 +216,14 @@ export default function Home() {
                     >
                       <div>
                         <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" />
-                        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
-                        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" />
-                        <img src="https://img.icons8.com/color/96/000000/django.png" />
-                        <img src="https://img.icons8.com/color/96/000000/amazon-web-services.png" />
                         <img src="https://img.icons8.com/color/96/000000/flutter.png" />
+                        <img src="../../flask-seeklogo.com.svg" />
+                        <img src="https://img.icons8.com/color/96/000000/django.png" />
                         <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" />
                         <img src="https://img.icons8.com/color/96/000000/heroku.png" />
-                        <img src="../../flask-seeklogo.com.svg" />
+                        <img src="https://img.icons8.com/color/96/000000/amazon-web-services.png" />
+                        <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" />
+                        <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" />
                       </div>
                     </div>
                   </div>
@@ -231,6 +234,9 @@ export default function Home() {
         </div>
       </section>
       {/* ########### End Skills Area ############ */}
+
+      {/* ########### Start Work Area ############ */}
+      {/* ########### End Work Area ############ */}
     </Layout>
   )
 }
