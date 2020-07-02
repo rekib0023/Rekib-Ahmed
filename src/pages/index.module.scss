@@ -3,9 +3,11 @@
 /*=========== Start Landing Area ============*/
 
 .site-banner-content {
-  padding: 16px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .site-title {
-    padding-top: 12%;
     h3 {
       margin: 0;
       padding-bottom: 0.1rem;
@@ -15,13 +17,12 @@
       margin: 0;
     }
     h4 {
-      padding-top: 25px;
+      padding-top: 1rem;
       margin-bottom: 3rem;
     }
   }
   img {
     padding: 7rem 0;
-    width: 90rem;
     margin: 0;
   }
 }
@@ -106,4 +107,13 @@
 /*=========== End Skill Area =============*/
 
 
+/*=========== End Work Area =============*/
+.workSectionContent{
+  // height: 100px;
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*=========== End Work Area =============*/
 

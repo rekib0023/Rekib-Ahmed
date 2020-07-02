@@ -2,16 +2,40 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import WorkCard from "../components/workCards"
 
-import { Row, Col, CardColumns, Card } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "../../static/_globalstyles.scss"
 import indexStyles from "./index.module.scss"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 export default function Home() {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulMyWork {
+        edges {
+          node {
+            name
+            displayImage {
+              title
+              file {
+                url
+              }
+            }
+            description
+            sourceCodeLink
+            livePreviewLink
+            category
+            tags
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <Head title="Home" />
@@ -80,12 +104,8 @@ export default function Home() {
               <br />
               <br />
               But later on I got introduced to Data Science and really got
-              intrigued with it. Learned the basics of
-              <strong>&nbsp;statistics</strong> and
-              <strong>&nbsp;mathematics</strong> for data science. Self learned
-              <strong>&nbsp;data science</strong> and
-              <strong>&nbsp;machine learning</strong> from scratch. Build some
-              exciting data science projects along the journey.
+              intrigued with it. And since then I am on a journey towards Data
+              Science
               <br />
               <br />
               Along with Data Science I am interested in
@@ -95,7 +115,7 @@ export default function Home() {
               <br />
               <br />
               Now here I am seeking<strong>&nbsp;jobs</strong> in the
-              <strong>&nbsp;Data Science</strong> domain.
+              <strong>&nbsp;Data Science</strong> field.
             </p>
             <br />
             <button
@@ -151,7 +171,7 @@ export default function Home() {
                         <img src="../../bootstrap-seeklogo.com.svg" />
                         <img src="https://img.icons8.com/color/96/000000/adobe-illustrator.png" />
                         <img src="https://img.icons8.com/color/96/000000/adobe-xd.png" />
-                        <img src="https://img.icons8.com/fluent/96/000000/adobe-photoshop.png" /> 
+                        <img src="https://img.icons8.com/fluent/96/000000/adobe-photoshop.png" />
                         <img src="https://img.icons8.com/color/96/000000/power-bi.png" />
                         <img src="https://img.icons8.com/color/96/000000/tableau-software.png" />
                         <img src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-official.svg" />
@@ -236,6 +256,25 @@ export default function Home() {
       {/* ########### End Skills Area ############ */}
 
       {/* ########### Start Work Area ############ */}
+      <section id="work" className={`container ${indexStyles.workSection}`}>
+        <div className={`container ${indexStyles.workSectionContent}`}>
+          <h1 className={`section-heading text-center`}>My Works</h1>
+          <h3 className={`sub-heading text-center`}>
+            Below are listed few of my projects.
+          </h3>
+          <Row>
+            {data.allContentfulMyWork.edges.map(edge => {
+              return (
+                <Col lg={4} md={6} sm={6} xs={12}>
+                  <div>
+                    <WorkCard props={edge}></WorkCard>
+                  </div>
+                </Col>
+              )
+            })}
+          </Row>
+        </div>
+      </section>
       {/* ########### End Work Area ############ */}
     </Layout>
   )
