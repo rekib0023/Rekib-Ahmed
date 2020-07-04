@@ -87,13 +87,13 @@ export default function Home() {
       {/* ########### Start About Area ############ */}
       <section
         id="about"
-        className={`container-fluid ${indexStyles.aboutSection}`}
+        className={`container ${indexStyles.aboutSection}`}
       >
         <Row style={{ margin: 0 }}>
-          <Col lg={6} md={12}>
+          {/* <Col lg={6} md={12}>
             <img src="../../illustration2.svg" alt="illustration" />
-          </Col>
-          <Col lg={6} md={12}>
+          </Col> */}
+          <Col className={`text-center`}>
             <h1 className={`section-heading`}>Let me introduce myself</h1>
             <p className={`para ${indexStyles.aboutPara}`}>
               I was born and raised in<strong>&nbsp;Assam</strong>, in a small
