@@ -41,6 +41,11 @@
     padding-right: 2rem;
     margin: 0;
   }
+  button {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
 }
 /*=========== End About Area =============*/
 
@@ -55,7 +60,7 @@
       justify-content: center;
     }
     .skill-cards {
-      padding: 2rem 0;
+      padding: 0;
       .card {
         padding: 2rem;
         margin-top: 30px;
@@ -107,12 +112,16 @@
 /*=========== End Skill Area =============*/
 
 
-/*=========== End Work Area =============*/
-.workSectionContent{
-  // height: 100px;
-  h1 {
-    display: flex;
-    justify-content: center;
+/*=========== Start Work Area =============*/
+.work-section{
+  margin-top: 3rem;
+  .work-section-content{
+    // height: 100px;
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }
 /*=========== End Work Area =============*/

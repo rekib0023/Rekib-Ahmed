@@ -85,17 +85,14 @@ export default function Home() {
       {/* ########## End Landing Area ########## */}
 
       {/* ########### Start About Area ############ */}
-      <section
-        id="about"
-        className={`container ${indexStyles.aboutSection}`}
-      >
+      <section id="about" className={`container ${indexStyles.aboutSection} `}>
         <Row style={{ margin: 0 }}>
           {/* <Col lg={6} md={12}>
             <img src="../../illustration2.svg" alt="illustration" />
           </Col> */}
           <Col className={`text-center`}>
             <h1 className={`section-heading`}>Let me introduce myself</h1>
-            <p className={`para ${indexStyles.aboutPara}`}>
+            <p className={`para ${indexStyles.aboutPara} text-left`}>
               I was born and raised in<strong>&nbsp;Assam</strong>, in a small
               town called Mangaldai. Growing up I decided to study Computer
               Science Engineering and I got interested in full-stack
@@ -114,19 +111,10 @@ export default function Home() {
               and listening to music all day long.
               <br />
               <br />
-              Now here I am seeking<strong>&nbsp;jobs</strong> in the
+              Actively seeking <strong>&nbsp;jobs</strong> in the
               <strong>&nbsp;Data Science</strong> field.
             </p>
             <br />
-            <button
-              type="button"
-              className={`btn button primary-button  text-uppercase`}
-            >
-              <span className={`${indexStyles.btnIcons}`}>
-                <FontAwesomeIcon icon="download" size="md" />
-              </span>
-              download my resume
-            </button>
           </Col>
         </Row>
       </section>
